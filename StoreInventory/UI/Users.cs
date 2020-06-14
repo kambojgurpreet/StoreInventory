@@ -29,7 +29,7 @@ namespace StoreInventory.UI
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            string loggedInUser = Login.loggedIn;
+            
 
             u.first_name = txtFirstName.Text;
             u.last_name = txtLastName.Text;
@@ -40,7 +40,11 @@ namespace StoreInventory.UI
             u.address = txtAddress.Text;
             u.user_type = cmbUserType.Text;
             u.added_date = DateTime.Now;
-            u.added_by = 1;
+
+            string loggedInUser = Login.loggedIn;
+            userBLL usr = dal.GetIDFromUsername(loggedInUser);
+
+            u.added_by = usr.id;
 
             bool success = dal.Insert(u);
 
