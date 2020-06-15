@@ -36,6 +36,7 @@
             this.productsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.inventoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.transactionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dealerAndCustomerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.labelUser = new System.Windows.Forms.Label();
             this.labelLoggedInUser = new System.Windows.Forms.Label();
             this.labelAppFName = new System.Windows.Forms.Label();
@@ -72,6 +73,7 @@
             this.userToolStripMenuItem,
             this.categoryToolStripMenuItem,
             this.productsToolStripMenuItem,
+            this.dealerAndCustomerToolStripMenuItem,
             this.inventoryToolStripMenuItem,
             this.transactionToolStripMenuItem});
             this.menuStripTop.Location = new System.Drawing.Point(0, 0);
@@ -112,6 +114,13 @@
             this.transactionToolStripMenuItem.Name = "transactionToolStripMenuItem";
             this.transactionToolStripMenuItem.Size = new System.Drawing.Size(84, 20);
             this.transactionToolStripMenuItem.Text = "Transactions";
+            // 
+            // dealerAndCustomerToolStripMenuItem
+            // 
+            this.dealerAndCustomerToolStripMenuItem.Name = "dealerAndCustomerToolStripMenuItem";
+            this.dealerAndCustomerToolStripMenuItem.Size = new System.Drawing.Size(130, 20);
+            this.dealerAndCustomerToolStripMenuItem.Text = "Dealer and Customer";
+            this.dealerAndCustomerToolStripMenuItem.Click += new System.EventHandler(this.dealerAndCustomerToolStripMenuItem_Click);
             // 
             // labelUser
             // 
@@ -194,6 +203,7 @@
         private System.Windows.Forms.Label labelLoggedInUser;
         private System.Windows.Forms.Label labelAppFName;
         private System.Windows.Forms.Label labelAppLName;
+        private System.Windows.Forms.ToolStripMenuItem dealerAndCustomerToolStripMenuItem;
     }
 }
 

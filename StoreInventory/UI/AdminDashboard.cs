@@ -52,5 +52,11 @@ namespace StoreInventory
             Products product = new Products();
             product.Show();
         }
+
+        private void dealerAndCustomerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DealerCustomer dc = new DealerCustomer();
+            dc.Show();
+        }
     }
 }

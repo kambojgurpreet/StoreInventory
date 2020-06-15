@@ -33,6 +33,7 @@
             this.purchaseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.inventoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dealerAndCustomerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.labelAppLName = new System.Windows.Forms.Label();
             this.labelAppFName = new System.Windows.Forms.Label();
@@ -49,6 +50,7 @@
             this.menuStripTop.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.purchaseToolStripMenuItem,
             this.salesToolStripMenuItem,
+            this.dealerAndCustomerToolStripMenuItem,
             this.inventoryToolStripMenuItem});
             this.menuStripTop.Location = new System.Drawing.Point(0, 0);
             this.menuStripTop.Name = "menuStripTop";
@@ -73,6 +75,13 @@
             this.inventoryToolStripMenuItem.Name = "inventoryToolStripMenuItem";
             this.inventoryToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
             this.inventoryToolStripMenuItem.Text = "Inventory";
+            // 
+            // dealerAndCustomerToolStripMenuItem
+            // 
+            this.dealerAndCustomerToolStripMenuItem.Name = "dealerAndCustomerToolStripMenuItem";
+            this.dealerAndCustomerToolStripMenuItem.Size = new System.Drawing.Size(130, 20);
+            this.dealerAndCustomerToolStripMenuItem.Text = "Dealer and Customer";
+            this.dealerAndCustomerToolStripMenuItem.Click += new System.EventHandler(this.dealerAndCustomerToolStripMenuItem_Click);
             // 
             // contextMenuStrip1
             // 
@@ -180,5 +189,6 @@
         private System.Windows.Forms.Label labelUser;
         private System.Windows.Forms.Panel panelFooter;
         private System.Windows.Forms.Label labelFooter;
+        private System.Windows.Forms.ToolStripMenuItem dealerAndCustomerToolStripMenuItem;
     }
 }
