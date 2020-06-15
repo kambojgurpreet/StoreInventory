@@ -40,5 +40,17 @@ namespace StoreInventory
         {
             labelLoggedInUser.Text = Login.loggedIn;
         }
+
+        private void categoryToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Categories category = new Categories();
+            category.Show();
+        }
+
+        private void productsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Products product = new Products();
+            product.Show();
+        }
     }
 }

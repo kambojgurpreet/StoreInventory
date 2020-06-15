@@ -115,6 +115,7 @@ namespace StoreInventory.UI
             if(success == true)
             {
                 MessageBox.Show("User data successfully updated.");
+                clear();
             }
             else
             {
